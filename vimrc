@@ -102,6 +102,9 @@ let mapleader = ","
 	let g:indentLine_color_term = 100
 "}
 
+"{ some key mappings
+	nmap :json :%!python -m json.tool
+"}
 
 "{	php 语法检查 , 保存:w 时，进行语法检查，注意配置 php 的位置
 autocmd BufWritePost *.php call PHPSyntaxCheck()
