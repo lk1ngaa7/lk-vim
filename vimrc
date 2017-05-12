@@ -10,14 +10,7 @@ set guioptions-=m           " 隐藏菜单栏
 set foldcolumn=0            " 设置在状态行显示的信息
 set confirm                 " 在处理未保存或只读文件的时候，弹出确认
 set autoindent              " 自动缩进
-"{ 统一缩进为4
-    set tabstop=4               " Tab键的宽度
-    set softtabstop=4
-    set shiftwidth=4
-"}
-set noexpandtab             " 不要用空格代替制表符
-set smarttab                " 在行和段开始处使用制表符
-set history=100             " 历史记录数
+set history=1000            " 历史记录数
 set ignorecase              "搜索忽略大小写
 "{  搜索逐字符高亮
     set hlsearch
@@ -63,6 +56,11 @@ endif
     set fileencodings=utf-8
     set fileencoding=utf-8
 "}  
+"{ 统一缩进为4
+    set tabstop=4               " Tab键的宽度
+	set expandtab
+    set shiftwidth=4
+"}
 let mapleader = ","
 "{ vundle begin
     set nocompatible              " be iMproved, required
